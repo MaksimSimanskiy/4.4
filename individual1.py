@@ -158,7 +158,6 @@ if __name__ == '__main__':
                 logging.info(
                     f"Добавлен магазин: {name},и  {product}, "
                     f"С ценой {price} рублей."
-
                 )
             elif command == 'list':
                 # Вывести список.
