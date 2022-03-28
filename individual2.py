@@ -160,7 +160,6 @@ if __name__ == '__main__':
                 logging.info(
                     f"Добавлен магазин: {name},и товар {product}, "
                     f"С ценой {price} рублей."
-
                 )
             elif command == 'list':
                 # Вывести список.
@@ -196,9 +195,9 @@ if __name__ == '__main__':
                 print("save <имя_файла> - сохранить данные в файл;")
                 print("help - отобразить справку;")
                 print("exit - завершить работу с программой.")
-
             else:
                 raise UnknownCommandError(command)
         except Exception as exc:
             logging.error(f"Ошибка: {exc}")
             print(exc, file=sys.stderr)
+            
